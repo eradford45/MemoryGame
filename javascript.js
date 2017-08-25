@@ -6,7 +6,7 @@ $(document).ready(function() {
   var box2 = undefined;
   var counter = 0
   $("td").click(function() {
-    if ($(this).attr("class") === "hidden") {
+    if ($(this).attr("class") === "notReveal") {
       if (box1 === undefined) {
         box1 = $(this);
         show(box1);
@@ -33,8 +33,8 @@ $(document).ready(function() {
       alert("Click a box");
     };
     $("#reset").click(function() {
-      $("td").removeClass("show");
-      $("td").addClass("hidden");
+      $("td").removeClass("reveal");
+      $("td").addClass("notReveal");
       shuffle(optionsArray);
       set(optionsArray);
       var box1 = undefined;
@@ -58,13 +58,13 @@ function set(optionsArray) {
 }
 function show(box) {
   $(box)
-    .removeClass("hidden")
-    .addClass("show");
+    .removeClass("notReveal")
+    .addClass("reveal");
 }
 function hide(box) {
   $(box)
-    .removeClass("show")
-    .addClass("hidden");
+    .removeClass("reveal")
+    .addClass("notReveal");
   return undefined;
 }
      

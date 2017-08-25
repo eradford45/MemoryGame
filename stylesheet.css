@@ -7,11 +7,11 @@ td {
   cursor: pointer;
 }
 
-.hidden {
+.notReveal {
   color: black;
 }
 
-.show {
+.reveal {
   color: white;
 }
 
