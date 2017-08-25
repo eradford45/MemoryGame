@@ -1,0 +1,46 @@
+td {
+  border: 5px solid magenta;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  font-size: 46px;
+  cursor: pointer;
+}
+
+.hidden {
+  color: black;
+}
+
+.show {
+  color: white;
+}
+
+h1 {
+  background-color: blue;
+  text-align: center
+}
+table {
+  background-color: black;
+}
+
+p {
+  text-align: center;
+  background-color: blue;
+}
+
+head {
+  background-color: blue;
+}
+
+html {
+  background-color: blue;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    
+}
